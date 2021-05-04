@@ -1,4 +1,4 @@
-package de.astmaih.intervallmerge;
+package de.astmaih.intervalmerge;
 
 import javax.faces.webapp.FacesServlet;
 import javax.servlet.ServletContext;
