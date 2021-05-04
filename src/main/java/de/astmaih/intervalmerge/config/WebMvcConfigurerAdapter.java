@@ -17,6 +17,6 @@ public class WebMvcConfigurerAdapter implements WebMvcConfigurer {
 	 */
 	@Override
 	public void addViewControllers(final ViewControllerRegistry registry) {
-		registry.addViewController("/").setViewName("/index.xhtml");
+		registry.addViewController("/").setViewName("/merge_interval.xhtml");
 	}
 }

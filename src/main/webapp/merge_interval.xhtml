@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Interval Merge</title>
+</h:head>
+
+<h:body style="max-width: 200px; margin: 50px auto">
+	<h:form id="merge">
+		<p:growl id="growl" showDetail="true" />
+		<p:outputPanel style="width: 100%; justify-content: center">
+			<p:outputLabel for="input" value="Input:"></p:outputLabel>
+			<p:inputTextarea id="input" value="#{intervalMergeBean.input}" />
+			<p:spacer height="10px" width="100%" />
+			<p:outputLabel for="result" value="Result: "></p:outputLabel>
+			<h:outputText id="result" value="#{intervalMergeBean.result}" />
+			<p:spacer height="10px" width="100%" />
+			<p:commandButton actionListener="#{intervalMergeBean.merge}"
+				update="merge" value="merge" />
+		</p:outputPanel>
+	</h:form>
+</h:body>
+</html>

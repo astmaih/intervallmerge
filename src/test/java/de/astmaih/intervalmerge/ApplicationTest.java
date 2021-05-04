@@ -1,4 +1,4 @@
-package de.astmaih.intervallmerge;
+package de.astmaih.intervalmerge;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
